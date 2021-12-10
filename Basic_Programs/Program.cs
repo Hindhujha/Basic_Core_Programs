@@ -17,6 +17,7 @@ namespace Basic_Core
                 Console.WriteLine("4.LARGEST OF 3 NUMBERS");
                 Console.WriteLine("5.QUOTIENT & REMAINDER");
                 Console.WriteLine("6.LEAP YEAR OR NOT");
+                Console.WriteLine("7.PERCENTAGE OF COIN FLIP");
                 int select = Convert.ToInt32(Console.ReadLine());
 
                 switch (select)
@@ -44,6 +45,10 @@ namespace Basic_Core
                     case 6:
                         LeapYear.LeapYear year = new LeapYear.LeapYear();
                         year.years();
+                        break;
+                    case 7:
+                        CoinFlip.CoinFlip flip = new CoinFlip.CoinFlip();
+                        flip.coin();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");

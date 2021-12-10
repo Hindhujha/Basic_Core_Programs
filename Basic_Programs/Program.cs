@@ -12,6 +12,7 @@ namespace Basic_Core
             Console.WriteLine("2.VOWEL/CONSONANT");
             Console.WriteLine("3.SWAPPING OF 2 NUMBERS");
             Console.WriteLine("4.LARGEST OF 3 NUMBERS");
+            Console.WriteLine("5.QUOTIENT & REMAINDER");
             int select=Convert.ToInt32(Console.ReadLine());
           
            
@@ -32,6 +33,10 @@ namespace Basic_Core
                 case 4:
                     Largest.Large_Number myObj1 = new Largest.Large_Number();
                     myObj1.large();
+                    break;
+                case 5:
+                    Compute.Quotient_Remainder div = new Compute.Quotient_Remainder();
+                    div.program();
                     break;
                     default:
                         Console.WriteLine("ENTER ANOTHER PROBLEM NO:");

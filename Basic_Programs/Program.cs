@@ -19,6 +19,7 @@ namespace Basic_Core
                 Console.WriteLine("6.LEAP YEAR OR NOT");
                 Console.WriteLine("7.PERCENTAGE OF COIN FLIP");
                 Console.WriteLine("8.Nth HARMONIC NUMBER");
+                Console.WriteLine("9.POWER OF 2 ");
                 int select = Convert.ToInt32(Console.ReadLine());
 
                 switch (select)
@@ -54,6 +55,10 @@ namespace Basic_Core
                     case 8:
                         Harmonic.Harmonic number = new Harmonic.Harmonic();
                         number.Harmonic_Number();
+                        break;
+                    case 9:
+                        Power_Of_2.Power_of2 Pow = new Power_Of_2. Power_of2();
+                        Pow.power();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");

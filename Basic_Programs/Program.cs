@@ -20,6 +20,7 @@ namespace Basic_Core
                 Console.WriteLine("7.PERCENTAGE OF COIN FLIP");
                 Console.WriteLine("8.Nth HARMONIC NUMBER");
                 Console.WriteLine("9.POWER OF 2 ");
+                Console.WriteLine("10.PRIME FACTORIZATION OF A NUMBER");
                 int select = Convert.ToInt32(Console.ReadLine());
 
                 switch (select)
@@ -59,6 +60,10 @@ namespace Basic_Core
                     case 9:
                         Power_Of_2.Power_of2 Pow = new Power_Of_2. Power_of2();
                         Pow.power();
+                        break;
+                    case 10:
+                        PrimeFactor.Prime_Factor prime=new PrimeFactor.Prime_Factor();
+                        prime.primefactor();
                         break;
                     default:
                         Console.WriteLine("ENTER A CORRECT NO:");
